@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background: #fed24d;
+}
+
+html {
+	height: 100%;	
+}
+
+body {
+	height: 100%;	
+	margin: 0 auto;
+	background: #fdfdfd;	
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	background-color: #292731;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #414141;
+	background-image: url("https://www.dropbox.com/s/m5wmbfxidhunrav/grad-bg.jpg?raw=1");
+
+}	
+
+#overlay {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(35, 35, 41, .9);
+	justify-content: center;
+	align-items: center;
+}
+
+.text-container {
+	display: none; /* block na click */
+	padding: 1.5em;
+	width: 30%;
+	background-color: rgba(28, 27, 34, .9);
+	color: #fff;
+	border: 1px solid #111014;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 3em;
+	line-height: 1.7em;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	height: 48px;
+	width: 200px;
+	color: #232323;
+	background: #ffc749;
+	border: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin: 2em auto;
+	width: 60%;
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	color: white;
+	line-height: 1.35em;
+	text-align: center;
+	text-shadow: 3px 3px 6px rgba(32, 30, 30, 0.95);
+}
+
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: .75em;
+}
+
+table {
+	font-family: "PT Sans";
+	min-width: 60%;
+	margin: 5em auto;
+	background: rgba(25, 24, 30, .8);
+	box-shadow: 0 0 16px 6px rgba(20, 19, 24, .6);
+	border: 1px solid #111014;
+	border-collapse: collapse;
+	color: white;
+	text-align: left;
+	backdrop-filter: blur(2px);
+}
+
+th {
+	color: #292731;
+	padding: 1.4em 1.4em;
+	background: #ffc749;
+	cursor: default;
+}
+
+tr {
+	border-bottom: 1px solid #111014;
+}
+
+tr:nth-child(odd) {
+	background-color: rgba(20, 19, 24, 0.6);
+}
+
+tr:hover {
+	background: rgba(67, 67, 69, .5);
+	color: white;
+	cursor: pointer;
+}
+
+td {
+	padding: 1em;
+	padding-left: 1.4em;
+	border-right: 1px solid #111014;
+}
+
+@media (max-width: 800px) {
+	h1 {
+		width: 90%;
+	}
+
+	table {
+		width: 90%;
+	}
+
+	.text-container {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1920px) {
+	h1 {
+		width: 40%;
+	}
+
+	table {
+		width: 40%;
+	}
+
+	.text-container {
+		width: 40%;
+	}
+}
