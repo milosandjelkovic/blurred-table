@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	height: 100%;	
+	min-height: 100%;	
 	margin: 0 auto;
 	background: #fdfdfd;	
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
@@ -44,7 +44,6 @@ body {
 .text-container {
 	display: none; /* block na click */
 	padding: 1.5em;
-	width: 30%;
 	background-color: rgba(28, 27, 34, .9);
 	color: #fff;
 	border: 1px solid #111014;
@@ -74,7 +73,6 @@ a {
 
 h1 {
 	margin: 2em auto;
-	width: 60%;
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	font-size: 2em;
 	color: white;
@@ -90,7 +88,6 @@ h2 {
 
 table {
 	font-family: "PT Sans";
-	min-width: 60%;
 	margin: 5em auto;
 	background: rgba(25, 24, 30, .8);
 	box-shadow: 0 0 16px 6px rgba(20, 19, 24, .6);
@@ -140,6 +137,19 @@ td {
 	.text-container {
 		width: 90%;
 	}
+}
+
+@media (max-width: 1920px) {
+    h1 {
+        width: 60%;
+    }
+
+    .text-container {
+        width: 30%;
+    }
+    table {
+        width: 60%;
+    }
 }
 
 @media (min-width: 1920px) {
