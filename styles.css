@@ -125,7 +125,7 @@ td {
 	border-right: 1px solid #111014;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 480px) {
 	h1 {
 		width: 90%;
 	}
@@ -139,14 +139,11 @@ td {
 	}
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 480px) {
     h1 {
         width: 60%;
     }
 
-    .text-container {
-        width: 30%;
-    }
     table {
         width: 60%;
     }
